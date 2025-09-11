@@ -1,0 +1,127 @@
+<div class="log-container">
+    <header class="log-header">
+        <h1>ОТЧЁТ: «НАЗВАНИЕ БП»</h1>
+        <h2>ОПИСАНИЕ ПРОЦЕССА</h2>
+    </header> <!-- Основные события -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ЛОГ-СОБЫТИЯ</span> <span class="subtitle">Ключевые шаги
+                бизнес‑процесса</span> </div>
+        <div class="log-content">
+            <div class="log-entry info">
+                <div class="log-timestamp">11.09.2025 22:16:23</div>
+                <div class="log-level">INFO</div>
+                <div class="log-message">СООБЩЕНИЕ</div>
+                <div class="log-source">ИСТОЧНИК</div>
+            </div>
+            <div class="log-entry warning">
+                <div class="log-timestamp">11.09.2025 22:16:23</div>
+                <div class="log-level">WARNING</div>
+                <div class="log-message">ОШИБКА: процесс завершён из‑за #######</div>
+                <div class="log-source">ЭТАП / ИСТОЧНИК</div>
+            </div>
+            <div class="log-entry error">
+                <div class="log-timestamp">11.09.2025 22:16:23</div>
+                <div class="log-level">ERROR</div>
+                <div class="log-message">КРИТИЧНАЯ ОШИБКА: что‑то пошло не по плану</div>
+                <div class="log-source">ИСТОЧНИК</div>
+            </div>
+        </div>
+    </div> <!-- Блок логирования переменных -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ПЕРЕМЕННЫЕ</span> <span class="subtitle">Снимок значений на момент
+                выполнения</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">V_DEAL_ID</td>
+                    <td class="v"></td>
+                    <td>Текущая сделка</td>
+                </tr>
+                <tr>
+                    <td class="k">V_CONTACT_ID</td>
+                    <td class="v"></td>
+                    <td>Связанный контакт</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>Стадия «Ожидание заезда»</td>
+                </tr>
+                <tr>
+                    <td class="k">C_FIELD_DEAL_CHECKIN_DATETIME</td>
+                    <td class="v"></td>
+                    <td>Поле «Дата/время заезда»</td>
+                </tr>
+                <tr>
+                    <td class="k">NOW</td>
+                    <td class="v">11.09.2025 22:16:23</td>
+                    <td>Текущее время (UTC)</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+    </div> <!-- Блоки логирования Активити (разворачиваемые секции) -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">АКТИВИТИ</span> <span class="subtitle">Подробные отчёты по
+                действиям</span> </div> <!-- 1) Пример Активити: «Найти сделки, где уже наступил День заезда» -->
+        <details open>
+            <summary> <span class="title">Отчёт Активити — A46928_86583_99847_65903 · DsF</span> <span
+                    class="subtitle">Найти сделки, где уже наступил «День заезда»</span> </summary>
+            <div class="two-col"> <!-- Результат выполнения (как вернул скрипт/действие) -->
+                <div>
+                    <div class="chip" style="margin-top:10px">Результат</div>
+                    <div class="codebox"> <button class="copy-btn" data-copy="res-1">Копировать</button>
+                        <pre
+                            id="res-1"><code>{ result: { {=A46928_86583_99847_65903:result} }, count: "{=A46928_86583_99847_65903:count}", errors: "{=A46928_86583_99847_65903:errors}", json1: "{=A46928_86583_99847_65903:json1}", json2: "{=A46928_86583_99847_65903:json2}", json3: "{=A46928_86583_99847_65903:json3}", json4: "{=A46928_86583_99847_65903:json4}", json5: "{=A46928_86583_99847_65903:json5}" }</code></pre>
+                    </div>
+                </div> <!-- Параметры запроса/выполнения -->
+                <div>
+                    <div class="chip" style="margin-top:10px">Параметры запроса</div>
+                    <div class="codebox"> <button class="copy-btn" data-copy="req-1">Копировать</button>
+                        <pre
+                            id="req-1"><code>{ "filter": { "STAGE_ID": "", "<=UF_CRM_RC_CHECKIN": "11.09.2025 22:16:23" }, "order": { "ID": "ASC" }, "select": [ "ID", "TITLE", "UF_CRM_RC_CHECKIN", "ASSIGNED_BY_ID" ] }</code></pre>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <!-- ШАБЛОН ДЛЯ ДРУГИХ АКТИВИТИ: скопируйте блок details и замените плейсхолдеры кодом вашего шага -->
+        <details>
+            <summary> <span class="title">Отчёт Активити — AXXXX_YYYY_ZZZZ</span> <span class="subtitle">Краткое
+                    описание действия</span> </summary>
+            <div class="two-col">
+                <div>
+                    <div class="chip" style="margin-top:10px">Результат</div>
+                    <div class="codebox"> <button class="copy-btn" data-copy="res-2">Копировать</button>
+                        <pre
+                            id="res-2"><code>{ result: { {=AXXXX_YYYY_ZZZZ:result} }, count: "{=AXXXX_YYYY_ZZZZ:count}", errors: "{=AXXXX_YYYY_ZZZZ:errors}", json1: "{=AXXXX_YYYY_ZZZZ:json1}", json2: "{=AXXXX_YYYY_ZZZZ:json2}"} </code></pre>
+                    </div>
+                </div>
+                <div>
+                    <div class="chip" style="margin-top:10px">Параметры запроса</div>
+                    <div class="codebox"> <button class="copy-btn" data-copy="req-2">Копировать</button>
+                        <pre
+                            id="req-2"><code>{ "filter": { /* … */ }, "order": { /* … */ }, "select": [ /* … */ ]} </code></pre>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </div> <!-- Примечания / Валидация -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ПРИМЕЧАНИЯ</span> <span class="subtitle">Как пользоваться
+                шаблоном</span> </div>
+        <ul>
+            <li>Дублируйте строки таблицы переменных и подставляйте свои плейсхолдеры вида <code></code>, <code></code>,
+                <code>{=System:...}</code>.
+            </li>
+            <li>Для каждого Активити копируйте блок <code>&lt;details&gt;</code>, меняйте код шага и описание, а также
+                значения плейсхолдеров внутри <em>Результата</em> и <em>Параметров</em>.</li>
+            <li>Кнопка «Копировать» копирует содержимое соответствующего блока <code>&lt;pre&gt;</code>.</li>
+        </ul>
+    </div>
+</div>
