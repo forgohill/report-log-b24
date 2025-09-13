@@ -24,3 +24,315 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* ====== REPORT SCOPE (локальные стили для фрагмента отчёта) ======
+.reportScope {
+  --bg: #0b0f14;
+  --panel: #121826;
+  --muted: #9aa4b2;
+  --text: #e6edf3;
+  --info: #319795;
+  --warn: #d69e2e;
+  --error: #e53e3e;
+  --ok: #38a169;
+  --card: #0f172a;
+  --code: #0b1220;
+  --border: #1f2a3a;
+  --chip: #1c2433;
+
+  padding: 24px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.reportScope * {
+  box-sizing: border-box;
+}
+
+.reportScope .log-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+.reportScope header.log-header {
+  margin-bottom: 18px;
+}
+
+.reportScope header.log-header h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  letter-spacing: .2px;
+}
+
+.reportScope header.log-header h2 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.reportScope .block {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.reportScope .block>.block-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  margin-bottom: 10px;
+}
+
+.reportScope .chip {
+  background: var(--chip);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.reportScope .log-content {
+  display: grid;
+  gap: 10px;
+}
+
+.reportScope .log-entry {
+  display: grid;
+  grid-template-columns: 170px 90px 1fr 200px;
+  gap: 10px;
+  align-items: start;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left-width: 6px;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.reportScope .log-entry .log-timestamp {
+  color: var(--muted);
+  white-space: nowrap;
+  font-feature-settings: "tnum" 1;
+}
+
+.reportScope .log-entry .log-level {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.reportScope .log-entry .log-message {
+  white-space: pre-wrap;
+}
+
+.reportScope .log-entry .log-source {
+  color: var(--muted);
+  text-align: right;
+}
+
+.reportScope .log-entry.info {
+  border-left-color: var(--info);
+}
+
+.reportScope .log-entry.warning {
+  border-left-color: var(--warn);
+}
+
+.reportScope .log-entry.error {
+  border-left-color: var(--error);
+}
+
+.reportScope .vars {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.reportScope .vars th,
+.reportScope .vars td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.reportScope .vars thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: .5px;
+  background: #0e1624;
+}
+
+.reportScope .vars tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reportScope .k,
+.reportScope .v {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.reportScope .k {
+  color: #93c5fd;
+}
+
+.reportScope .v {
+  color: #e9f5ff;
+}
+
+.reportScope details {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.reportScope details+details {
+  margin-top: 10px;
+}
+
+.reportScope details>summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reportScope details>summary::-webkit-details-marker {
+  display: none;
+}
+
+.reportScope .title {
+  font-weight: 600;
+}
+
+.reportScope .subtitle {
+  color: var(--muted);
+}
+
+.reportScope .codebox {
+  position: relative;
+  background: var(--code);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.reportScope .codebox pre {
+  margin: 0;
+  overflow: auto;
+}
+
+.reportScope .copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+  background: #0f1a2c;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reportScope .copy-btn:hover {
+  color: var(--text);
+}
+
+.reportScope .two-col {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .reportScope .log-entry {
+    grid-template-columns: 130px 80px 1fr;
+  }
+
+  .reportScope .log-entry .log-source {
+    grid-column: 1 / -1;
+    text-align: left;
+  }
+
+  .reportScope .two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reportScope .codebox .toolbar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.reportScope .codebox .btn {
+  font-size: 12px;
+  background: #0f1a2c;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reportScope .codebox .btn:hover {
+  color: var(--text);
+}
+
+.reportScope .codebox.big {
+  padding-top: 40px;
+}
+
+.reportScope .codebox.big pre {
+  max-height: 320px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.reportScope .codebox.big::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(11, 18, 32, 0), var(--code));
+  pointer-events: none;
+}
+
+.reportScope .codebox.big.expanded pre {
+  max-height: none;
+}
+
+.reportScope .codebox.big.expanded::after {
+  display: none;
+}
+
+.reportScope .report-empty {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+ */

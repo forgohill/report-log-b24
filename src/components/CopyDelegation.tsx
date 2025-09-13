@@ -3,32 +3,30 @@ import { useEffect } from 'react';
 import JSON5 from 'json5';
 import { jsonrepair } from 'jsonrepair';
 
+type Props = { rootSelector?: string }; // ← добавили тип пропсов
+
 function quoteBitrixPlaceholders(src: string) {
-    // Оборачиваем {=...} в строки, чтобы парсер не спотыкался
     return src.replace(/(\{=[^}]+\})/g, '"$1"');
 }
 
 function tryFormat(text: string): string {
     const prepped = quoteBitrixPlaceholders(text);
-
-    // 1) пробуем починить «почти JSON»
     let repaired = prepped;
     try { repaired = jsonrepair(prepped); } catch { }
-
-    // 2) пробуем строгий JSON
     try { return JSON.stringify(JSON.parse(repaired), null, 2); } catch { }
-
-    // 3) пробуем JSON5 (разрешает безкавыч. ключи и т. п.)
     try { return JSON.stringify(JSON5.parse(repaired), null, 2); } catch { }
-
-    // Не смогли — возвращаем оригинал
     return text;
 }
 
-export default function CopyDelegation() {
+export default function CopyDelegation({ rootSelector }: Props) {  // ← принимаем проп
     useEffect(() => {
-        // Автоформат всех <pre data-format="auto">
-        document.querySelectorAll<HTMLPreElement>('pre[data-format="auto"]').forEach((pre) => {
+        // Ограничиваем область делегирования
+        const root: Element | Document =
+            (rootSelector ? document.querySelector(rootSelector) : null) ?? document;
+
+        // Автоформат только внутри root
+        const pres = (root as Element | Document).querySelectorAll?.('pre[data-format="auto"]') as NodeListOf<HTMLPreElement>;
+        pres?.forEach((pre) => {
             const code = pre.querySelector('code');
             const raw = (code?.innerText ?? pre.innerText).trim();
             const pretty = tryFormat(raw);
@@ -37,7 +35,7 @@ export default function CopyDelegation() {
             }
         });
 
-        function onClick(e: MouseEvent) {
+        const onClick = (e: Event) => {
             const el = e.target as HTMLElement | null;
             if (!el) return;
 
@@ -66,7 +64,7 @@ export default function CopyDelegation() {
                 return;
             }
 
-            // Форматировать по кнопке (повторно)
+            // Форматировать
             const fmtBtn = el.closest('.format-btn') as HTMLElement | null;
             if (fmtBtn) {
                 const id = fmtBtn.getAttribute('data-target')!;
@@ -96,11 +94,12 @@ export default function CopyDelegation() {
                 a.click(); a.remove(); URL.revokeObjectURL(url);
                 return;
             }
-        }
+        };
 
-        document.addEventListener('click', onClick);
-        return () => document.removeEventListener('click', onClick);
-    }, []);
+        // Слушаем клики только на корне отчёта
+        (root as Element | Document).addEventListener('click', onClick as EventListener);
+        return () => (root as Element | Document).removeEventListener('click', onClick as EventListener);
+    }, [rootSelector]);
 
     return null;
 }

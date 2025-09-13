@@ -1,0 +1,22 @@
+.header {
+  padding: 16px 24px;
+  background: #121826;
+  border-bottom: 1px solid #1f2a3a;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: .3px;
+  font-size: 18px;
+}
+
+.subtitle {
+  color: #9aa4b2;
+  font-size: 14px;
+}

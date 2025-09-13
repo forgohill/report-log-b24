@@ -1,45 +1,876 @@
-<!-- Блок логирования переменных -->
-<div class="block">
-    <div class="block-title"> <span class="chip">ПЕРЕМЕННЫЕ</span>
-        <span class="subtitle">Снимок значений на момент
-            выполнения</span>
+<div class="log-container"> <!-- Заголовок -->
+    <header class="log-header">
+        <h1>ОТЧЁТ: «НАЗВАНИЕ_БП»</h1>
+        <h2>ОПИСАНИЕ_ПРОЦЕССА</h2>
+    </header> <!-- Логирование АКТИВИТИ -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ID_АКТИВИТИ</span> <span class="subtitle">НЕБОЛЬШОЕ_ОПИСАНИЕ_БИЗНЕС
+                ПРОЦЕССА</span> </div>
+        <div class="log-content">
+            <div class="log-entry info">
+                <div class="log-timestamp">13.09.2025 14:12:59</div>
+                <div class="log-level">INFO</div>
+                <div class="log-message">ЧТО_ДЕЛАЕТ_АКТИВИТИ</div>
+                <div class="log-source">ИСТОЧНИК</div>
+            </div> <!-- Удалите ненужные блоки в зависимости от ветки события -->
+            <div class="log-entry warning">
+                <div class="log-timestamp">11.09.2025 22:16:23</div>
+                <div class="log-level">WARNING</div>
+                <div class="log-message">ОШИБКА:_процесс_завершён_из_за_#######</div>
+                <div class="log-source">ЭТАП / ИСТОЧНИК</div>
+            </div>
+            <div class="log-entry error">
+                <div class="log-timestamp">11_09_2025_22_16_23</div>
+                <div class="log-level">ERROR</div>
+                <div class="log-message">КРИТИЧНАЯ_ОШИБКА:_что_то_пошло_не_по_плану</div>
+                <div class="log-source">ИСТОЧНИК</div>
+            </div>
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+    </div> <!-- Логирование АКТИВИТИ -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ID_АКТИВИТИ</span> <span class="subtitle">ТУТ_МОЖНО_НАПИСАТЬ
+                АДРЕС_ОБРАЩЕНИЯ_REST_API</span> </div>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+    </div> <!-- Блок логирования переменных -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 1</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">1</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">47295</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 2</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">2</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">18362</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 3</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">3</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">94817</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 4</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">4</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">25638</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 5</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">5</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">79143</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 6</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">6</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">62859</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 7</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">7</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">31974</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 8</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">8</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">86421</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 9</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">9</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">53786</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 10</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">10</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">14937</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 11</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">11</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">98264</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 12</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">12</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">27591</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 13</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">13</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">61385</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 14</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">14</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">39742</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 15</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">15</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">85129</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 16</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">16</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">42876</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 17</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">17</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">76913</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 18</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">18</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">19458</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 19</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">19</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">58731</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+        <div class="block-title"> <span class="chip">ЛОГИРОВАНИЕ ИТЕРАЦИИ</span> <span class="subtitle">Снимок значений
+                на момент итерации 20</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">КЛЮЧ</td>
+                    <td class="v">20</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">ЗНАЧЕНИЕ</td>
+                    <td class="v">92647</td>
+                    <td>Описание переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание константы</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
+        <div class="log-content">
+            <div class="codebox big">
+                <div class="toolbar"> <button class="btn copy-json-btn" data-copy="res-96814">Копировать</button>
+                    <button class="btn toggle-btn" data-target="res-96814">Развернуть</button> <button
+                        class="btn format-btn" data-target="res-96814">Форматировать</button> <button
+                        class="btn download-btn" data-source="res-96814" data-name="result-96814.json">Скачать</button>
+                </div>
+                <pre id="res-96814"
+                    data-format="auto"> <code> { "result": [ {=A14583_18980_3686_96814:result } ], "count": "{=A14583_18980_3686_96814:count}", "errors": "{=A14583_18980_3686_96814:errors}", "json1": "{=A14583_18980_3686_96814:json1}", "json2": "{=A14583_18980_3686_96814:json2}", "json3": "{=A14583_18980_3686_96814:json3}", "json4": "{=A14583_18980_3686_96814:json4}", "json5": "{=A14583_18980_3686_96814:json5}", "json6": "{=A14583_18980_3686_96814:json6}", "json7": "{=A14583_18980_3686_96814:json7}", "json8": "{=A14583_18980_3686_96814:json8}", "json9": "{=A14583_18980_3686_96814:json9}", "json10": "{=A14583_18980_3686_96814:json10}" } </code> </pre>
+            </div>
+        </div>
+    </div> <!-- Блок логирования переменных -->
+    <div class="block">
+        <div class="block-title"> <span class="chip">ПЕРЕМЕННЫЕ, константы, параметры</span> <span
+                class="subtitle">Снимок значений на момент выполнения</span> </div>
+        <table class="vars">
+            <thead>
+                <tr>
+                    <th>Код</th>
+                    <th>Значение</th>
+                    <th>Комментарий</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
+                <tr>
+                    <td class="k">V_DEAL_ID</td>
+                    <td class="v"></td>
+                    <td>Описание_переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">V_CONTACT_ID</td>
+                    <td class="v"></td>
+                    <td>Описание_переменной</td>
+                </tr>
+                <tr>
+                    <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
+                    <td class="v"></td>
+                    <td>описание_константы</td>
+                </tr>
+                <tr>
+                    <td class="k">C_FIELD_DEAL_CHECKIN_DATETIME</td>
+                    <td class="v"></td>
+                    <td>Поле__Дата_время_заезда»</td>
+                </tr>
+                <tr>
+                    <td class="k">NOW</td>
+                    <td class="v">11.09.2025 22:16:23</td>
+                    <td>Описание_параметра</td>
+                </tr> <!-- Добавляйте свои переменные и константы по образцу -->
+            </tbody>
+        </table>
     </div>
-    <table class="vars">
-        <thead>
-            <tr>
-                <th>Код</th>
-                <th>Значение</th>
-                <th>Комментарий</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Примеры: дублируйте строки и меняйте имена/плейсхолдеры -->
-            <tr>
-                <td class="k">V_DEAL_ID</td>
-                <td class="v"></td>
-                <td>Описание_переменной</td>
-            </tr>
-            <tr>
-                <td class="k">V_CONTACT_ID</td>
-                <td class="v"></td>
-                <td>Описание_переменной</td>
-            </tr>
-            <tr>
-                <td class="k">C_STAGE_ID_WAIT_CHECKIN</td>
-                <td class="v"></td>
-                <td>описание_константы</td>
-            </tr>
-            <tr>
-                <td class="k">C_FIELD_DEAL_CHECKIN_DATETIME</td>
-                <td class="v"></td>
-                <td>Поле__Дата_время_заезда»</td>
-            </tr>
-            <tr>
-                <td class="k">NOW</td>
-                <td class="v">11.09.2025 22:16:23</td>
-                <td>Описание_параметра</td>
-            </tr>
-            <!-- Добавляйте свои переменные и константы по образцу -->
-        </tbody>
-    </table>
 </div>
