@@ -1,0 +1,30 @@
+{
+    "schemaVersion": "1.0",
+    "generatedAt": "01.01.1970 03:00:00",
+    "process": {
+        "workflowId": "WF-0000",
+        "templateId": "00.00.02",
+        "templateName": "Шаблон логи JSON",
+        "businessKey": "",
+        "document": {
+            "entityTypeId": 2,
+            "entityId": 111
+        },
+        "initiatorUserId": "user_9",
+        "startedAt": "01.01.1970 03:00:00",
+        "finishedAt": "",
+        "durationMs": 120000,
+        "status": "SUCCESS"
+    },
+    "variables": {
+        "V_TRACE_ID": "",
+        "V_BUSINESS_KEY": "",
+        "V_STARTED_AT": "01.01.1970 03:00:00",
+        "V_FINISHED_AT": "",
+        "V_STATUS": "",
+        "V_EVENTS": "",
+        "V_EVENT_SEQ": "",
+        "V_ERRORS": "0",
+        "V_WARNINGS": "0"
+    }
+}

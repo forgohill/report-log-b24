@@ -1,18 +1,112 @@
 {
-    "count": "{=A371_29938_11581_38324:count}",
-    "errors": "{=A371_29938_11581_38324:errors}",
-    "json1": "[{=A371_29938_11581_38324:json1}]",
-    "json2": "[{=A371_29938_11581_38324:json2}]",
-    "json3": "[{=A371_29938_11581_38324:json3}]",
-    "json4": "[{=A371_29938_11581_38324:json4}]",
-    "json5": "[{=A371_29938_11581_38324:json5}]",
-    "json6": "{=A371_29938_11581_38324:json6}",
-    "json7": "{=A371_29938_11581_38324:json7}",
-    "json8": "{=A371_29938_11581_38324:json8}",
-    "json9": "{=A371_29938_11581_38324:json9}",
-    "json10": "{=A371_29938_11581_38324:json10}",
-    "result": [
-        {=A371_29938_11581_38324:result
+    "schemaVersion": "1.0",
+    "generatedAt": "2025-09-16T13:22:11Z",
+    "process": {
+        "workflowId": "WF-96814",
+        "templateId": 123,
+        "templateName": "Обработка брони",
+        "businessKey": "DEAL:53210",
+        "document": {
+            "entityTypeId": 2,
+            "entityId": 53210
+        },
+        "initiatorUserId": 17,
+        "startedAt": "2025-09-16T13:20:00Z",
+        "finishedAt": "2025-09-16T13:22:00Z",
+        "durationMs": 120000,
+        "status": "SUCCESS"
+    },
+    "correlation": {
+        "traceId": "7a8f...e2",
+        "spanId": "6bc1...9d"
+    },
+    "variables": {
+        "initial": {
+            "phone": "+7...",
+            "rcId": "12345"
+        },
+        "final": {
+            "phone": "+7...",
+            "rcId": "12345",
+            "ttlockCode": "8192"
+        },
+        "changes": [
+            {
+                "name": "ttlockCode",
+                "scope": "process",
+                "old": null,
+                "new": "8192",
+                "ts": "2025-09-16T13:21:40Z"
+            }
+        ]
+    },
+    "activities": [
+        {
+            "id": "A96814",
+            "name": "REST: RealtyCalendar getBooking",
+            "type": "REST",
+            "startedAt": "2025-09-16T13:20:05Z",
+            "finishedAt": "2025-09-16T13:20:06Z",
+            "durationMs": 950,
+            "status": "SUCCESS",
+            "outputs": {
+                "resultPreview": "{ \"id\":12345, ... }",
+                "truncated": true
+            }
         }
     ],
+    "gateways": [
+        {
+            "id": "G1",
+            "name": "Есть телефон?",
+            "type": "exclusive",
+            "evaluatedAt": "2025-09-16T13:20:08Z",
+            "condition": "phone != ''",
+            "selectedPath": "YES"
+        }
+    ],
+    "events": [
+        {
+            "id": "e-1",
+            "time": "2025-09-16T13:20:05Z",
+            "type": "activity.started",
+            "subject": "activity:A96814",
+            "level": "INFO",
+            "traceId": "7a8f...e2",
+            "spanId": "6bc1...9d",
+            "message": "Запрос в RC"
+        },
+        {
+            "id": "e-2",
+            "time": "2025-09-16T13:20:06Z",
+            "type": "rest.response",
+            "subject": "activity:A96814",
+            "level": "DEBUG",
+            "message": "Ответ RC (превью)",
+            "dataContentType": "application/json",
+            "data": {
+                "id": 12345,
+                "guest": "Иван",
+                "dates": {
+                    "from": "2025-09-20",
+                    "to": "2025-09-22"
+                }
+            }
+        },
+        {
+            "id": "e-3",
+            "time": "2025-09-16T13:20:08Z",
+            "type": "gateway.evaluated",
+            "subject": "gateway:G1",
+            "level": "INFO",
+            "message": "Ветка YES"
+        }
+    ],
+    "summary": {
+        "activitiesTotal": 12,
+        "errors": 0,
+        "warnings": 1,
+        "retries": 0,
+        "totalDurationMs": 120000
+    }
 }
